@@ -14,7 +14,7 @@ function App() {
 
   return (
     <div className="App">
-      <p>hey</p>
+
       <Routes>
         <Route path='/' element={<GameScreen />} />
         <Route path='/scoreboard' element={<ScoreBoard />} />
