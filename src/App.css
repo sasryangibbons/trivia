@@ -1,38 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
 .App {
-  text-align: center;
+    border: 3px solid black;
+    width: 400px;
+    max-width: 96%;
+    margin: 0 auto;
+    margin-top: 3rem;
+    padding: 1rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+form * {
+    margin-bottom: .5rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button {
+    padding: .3rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.gameContent * {
+
+    margin-bottom: .3rem;
 }
 
-.App-link {
-  color: #61dafb;
+.question {
+    font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.answer {
+    display: block;
+}
+
+input[type="radio"]:checked~* {
+    font-weight: bold;
+    color: blue;
+
+}
+
+.gameOver * {
+    margin-bottom: 1rem;
+}
+
+.score {
+    margin-top: .5rem;
+    border-bottom: 1px solid black;
+    padding-bottom: .5rem;
 }
