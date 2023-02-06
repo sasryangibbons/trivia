@@ -18,8 +18,6 @@ function Question() {
 
 
 
-    console.log(correctAnswer);
-
 
     function handleSubmit(): void {
         if (!selectedAnswer) {
